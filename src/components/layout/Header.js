@@ -117,14 +117,14 @@ export default function Header({nav, fetchPatientData}) {
     }
 
     return (
-        <Navigation ref={nav}>
+        <Navigation data-testid="nav" ref={nav}>
             <Container>
                 <Logo src={logoImage}/>
                 <h1>accuBook Dashboard</h1>
                 <label>
                     <input type="text" aria-label="patient lookup" placeholder="Search for a patient..." onChange={(e)=> handleFilter(e)}/>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="10" cy="10.5" r="8.5" stroke="white" stroke-width="3"/>
+                        <circle cx="10" cy="10.5" r="8.5" stroke="white" strokeWidth="3"/>
                         <path d="M21.9393 23.5607C22.5251 24.1464 23.4749 24.1464 24.0607 23.5607C24.6464 22.9749 24.6464 22.0251 24.0607 21.4393L21.9393 23.5607ZM14.9393 16.5607L21.9393 23.5607L24.0607 21.4393L17.0607 14.4393L14.9393 16.5607Z" fill="white"/>
                     </svg>
                 </label>
